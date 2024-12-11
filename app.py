@@ -16,7 +16,7 @@ st.plotly_chart(fig_hist_mpg)
 
 fig_hist_hp = px.histogram(df_vehicles, x='price', title='Distribution of Price')
 st.plotly_chart(fig_hist_hp)
-df_vehicles[['price', 'odometer']].hist(color='green', alpha=0.5, edgecolor='black')
+
 
 fig_scatter = px.scatter(df_vehicles, x='odometer', y='price', title='Odometer vs Price')
 st.plotly_chart(fig_scatter)
